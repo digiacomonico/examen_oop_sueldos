@@ -105,22 +105,33 @@ public class Tests {
         Peon pepe = new Peon(false, 100, 300.0);
         Peon pepita = new Peon(true,100,300.0);
         MedioOficial pepon = new MedioOficial(false,100,300.0);
+        Oficial jose = new Oficial(false,100,300.0,true);
+        Capataz josele = new Capataz(true,200,300.0,true);
+
 
         pepe.calcularSueldoBruto();
         pepita.calcularSueldoBruto();
         pepon.calcularSueldoBruto();
+        jose.calcularSueldoBruto();
+        josele.calcularSueldoBruto();
 
         System.out.println(pepe.getSueldoBruto());
         System.out.println(pepita.getSueldoBruto());
         System.out.println(pepon.getSueldoBruto());
+        System.out.println(jose.getSueldoBruto());
+        System.out.println(josele.getSueldoBruto());
 
         pepe.calcularSueldoNeto();
         pepita.calcularSueldoNeto();
         pepon.calcularSueldoNeto();
+        jose.calcularSueldoNeto();
+        josele.calcularSueldoNeto();
 
         System.out.println(pepe.getSueldoNeto());
         System.out.println(pepita.getSueldoNeto());
         System.out.println(pepon.getSueldoNeto());
+        System.out.println(jose.getSueldoNeto());
+        System.out.println(josele.getSueldoNeto());
 
 //        System.out.println(pepe.getClass());
 
@@ -128,6 +139,8 @@ public class Tests {
         empleadoList.add(pepe);
         empleadoList.add(pepita);
         empleadoList.add(pepon);
+        empleadoList.add(jose);
+        empleadoList.add(josele);
 
 
         Empresa empresa = new Empresa(empleadoList);
