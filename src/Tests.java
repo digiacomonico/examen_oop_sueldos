@@ -6,13 +6,27 @@ public class Tests {
 
     public static void main(String[] args) {
         Tests aTest = new Tests();
-//        aTest.pruebaBasicaPeon();
-//        aTest.pruebaBasicaMedioOficial();
+        System.out.println("START-TEST pruebaBasicaPeon");
+        aTest.pruebaBasicaPeon();
+        System.out.println("FINISH-TEST pruebaBasicaPeon");
+
+        System.out.println("START-TEST pruebaBasicaMedioOficial");
+        aTest.pruebaBasicaMedioOficial();
+        System.out.println("FINISH-TEST pruebaBasicaMedioOficial");
+
+        System.out.println("START-TEST pruebaBasicaOficial");
+        aTest.pruebaBasicaOficial();
+        System.out.println("FINISH-TEST pruebaBasicaOficial");
+
+
+        System.out.println("START-TEST pruebaBasicaCapataz");
+        aTest.pruebaBasicaCapataz();
+        System.out.println("FINISH-TEST pruebaBasicaCapataz");
+
+        System.out.println("START-TEST pruebaBasicaEmpresa");
         aTest.pruebaBasicaEmpresa();
-//        aTest.pruebaBasicaCapataz();
-        //aTest.materiaConCorrelativasDesaprobadas();
-        //aTest.materiaTrabajoFinalConCreditosInsuficientes();
-        //aTest.pruebasAnoLectivo();
+        System.out.println("FINISH-TEST pruebaBasicaEmpresa");
+
     }
 
 
