@@ -16,7 +16,7 @@ public class Tests {
         Tests aTest = new Tests();
 //        aTest.pruebaBasicaPeon();
 //        aTest.pruebaBasicaMedioOficial();
-        aTest.pruebaBasicaEmpresa();
+        aTest.pruebaBasicaPeon();
 //        aTest.pruebaBasicaCapataz();
         //aTest.materiaConCorrelativasDesaprobadas();
         //aTest.materiaTrabajoFinalConCreditosInsuficientes();
@@ -43,16 +43,23 @@ public class Tests {
 
 
     public void pruebaBasicaPeon() {
-        Peon pepe = new Peon(false, 100, 300.0);
+        Peon pepe = new Peon(false, 1000, 300.0);
+        Peon teresa = new Peon(false,1000,300.0);
 
-        System.out.println(pepe.getValorHora());
-//        pepe.setHorasTrabajadas(3);
-        System.out.println(pepe.getHorasTrabajadas());
+        pepe.setDonaSueldo(false);
+        teresa.setDonaSueldo(true);
+        teresa.setCantidadDonada(2000.0);
+
+
         pepe.calcularSueldoBruto();
+        teresa.calcularSueldoBruto();
         System.out.println(pepe.getSueldoBruto());
+        System.out.println(teresa.getSueldoBruto());
 
         pepe.calcularSueldoNeto();
+        teresa.calcularSueldoNeto();
         System.out.println(pepe.getSueldoNeto());
+        System.out.println(teresa.getSueldoNeto());
         System.out.println(pepe.getClass());
 
 

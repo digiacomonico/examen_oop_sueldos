@@ -5,6 +5,8 @@ public class Empleado {
     private Boolean afiliadoAlGremio;
     private Integer horasTrabajadas;
     private Double valorHora;
+    private Boolean donaSueldo;
+    private Double cantidadDonada;
 
     public Empleado() {
 
@@ -57,6 +59,22 @@ public class Empleado {
         this.valorHora = valorHora;
     }
 
+    public Boolean getDonaSueldo() {
+        return donaSueldo;
+    }
+
+    public void setDonaSueldo(Boolean donaSueldo) {
+        this.donaSueldo = donaSueldo;
+    }
+
+    public Double getCantidadDonada() {
+        return cantidadDonada;
+    }
+
+    public void setCantidadDonada(Double cantidadDonada) {
+        this.cantidadDonada = cantidadDonada;
+    }
+
     public void calcularSueldoBruto()
 
     {
@@ -76,7 +94,12 @@ public class Empleado {
 
         if (this.sueldoBruto > 30000){
             double excedente = this.getSueldoBruto() - 30000;
-            retencionGanancias = excedente * 0.02;
+            if(donaSueldo){
+                double preRetencionGanancias = excedente * 0.02;
+                retencionGanancias = preRetencionGanancias * (1 - ((int) (cantidadDonada / 1000) * 0.01) );
+            }
+            else retencionGanancias = excedente * 0.02;
+
         } else retencionGanancias = 0.0;
 
         System.out.println("Sueldo Bruto: " + sueldoBruto);
@@ -85,7 +108,7 @@ public class Empleado {
         System.out.println("Aporte Jubilatorio: " + aporteJubilatorio);
         System.out.println("Aporte Gremio: " + aporteGremio);
         System.out.println("Retencion Ganancias: " + retencionGanancias);
-        this.sueldoNeto = this.getSueldoBruto() - (ley19032 + obraSocial + aporteJubilatorio + aporteGremio);
+        this.sueldoNeto = this.getSueldoBruto() - (ley19032 + obraSocial + aporteJubilatorio + aporteGremio + retencionGanancias);
         System.out.println("Sueldo Neto = " + this.getSueldoBruto() + " - (" + ley19032 + " + " + obraSocial + " + "
                 + aporteJubilatorio + " + " + aporteGremio + " + " + retencionGanancias +  ")");
     }
