@@ -2,8 +2,8 @@ public class Oficial extends Peon{
 
     private Boolean cumplioObjetivos;
 
-    public Oficial(Boolean afiliadoAlGremio, Integer horasTrabajadas, Double valorHora, Boolean cumplioObjetivos) {
-        super(afiliadoAlGremio, horasTrabajadas, valorHora);
+    public Oficial(Boolean afiliadoAlGremio, Integer horasTrabajadas, Boolean donaSueldo, Boolean cumplioObjetivos) {
+        super(afiliadoAlGremio, horasTrabajadas,donaSueldo);
         this.cumplioObjetivos = cumplioObjetivos;
         this.setValorHora(this.getValorHora() * 1.1);
     }

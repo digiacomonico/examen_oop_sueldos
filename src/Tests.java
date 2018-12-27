@@ -3,20 +3,12 @@ import java.util.List;
 
 public class Tests {
 
-    /*
-    Queremos implementar un sistema que permita realizar la inscripción a materias de una
-    Universidad.
-    De cada materia hay un único curso y el programa tiene sólo información de la inscripción actual,
-    no nos interesan inscripciones anteriores. Debemos conocer el historial de materias aprobadas de un
-    estudiante. De cada materia aprobada hay que saber qué materia aprobó y con qué nota.
-     */
-
 
     public static void main(String[] args) {
         Tests aTest = new Tests();
 //        aTest.pruebaBasicaPeon();
 //        aTest.pruebaBasicaMedioOficial();
-        aTest.pruebaBasicaPeon();
+        aTest.pruebaBasicaEmpresa();
 //        aTest.pruebaBasicaCapataz();
         //aTest.materiaConCorrelativasDesaprobadas();
         //aTest.materiaTrabajoFinalConCreditosInsuficientes();
@@ -24,27 +16,27 @@ public class Tests {
     }
 
 
-    public void pruebaBasicaEmpleado() {
-
-        Empleado pepe = new Empleado(false,101,300.0);
-//        pepe.setValorHora(300);
-        System.out.println(pepe.getValorHora());
-//        pepe.setHorasTrabajadas(3);
-        System.out.println(pepe.getHorasTrabajadas());
-        pepe.calcularSueldoBruto();
-        System.out.println(pepe.getSueldoBruto());
-
-        pepe.calcularSueldoNeto();
-        System.out.println(pepe.getSueldoNeto());
-        System.out.println(pepe.getClass());
-
-
-    }
+//    public void pruebaBasicaEmpleado() {
+//
+//        Empleado pepe = new Empleado(false,101);
+////        pepe.setValorHora(300);
+//        System.out.println(pepe.getValorHora());
+////        pepe.setHorasTrabajadas(3);
+//        System.out.println(pepe.getHorasTrabajadas());
+//        pepe.calcularSueldoBruto();
+//        System.out.println(pepe.getSueldoBruto());
+//
+//        pepe.calcularSueldoNeto();
+//        System.out.println(pepe.getSueldoNeto());
+//        System.out.println(pepe.getClass());
+//
+//
+//    }
 
 
     public void pruebaBasicaPeon() {
-        Peon pepe = new Peon(false, 1000, 300.0);
-        Peon teresa = new Peon(false,1000,300.0);
+        Peon pepe = new Peon(false, 1000,false);
+        Peon teresa = new Peon(false,1000,false);
 
         pepe.setDonaSueldo(false);
         teresa.setDonaSueldo(true);
@@ -65,24 +57,26 @@ public class Tests {
 
     }
 
+
     public void pruebaBasicaMedioOficial() {
-        MedioOficial pepe = new MedioOficial(false, 100, 300.0);
+        MedioOficial pepe = new MedioOficial(false, 100,true);
 
         System.out.println(pepe.getValorHora());
         System.out.println(pepe.getHorasTrabajadas());
         pepe.calcularSueldoBruto();
         System.out.println(pepe.getSueldoBruto());
 
+        pepe.setCantidadDonada(1.0);
         pepe.calcularSueldoNeto();
         System.out.println(pepe.getSueldoNeto());
         System.out.println(pepe.getClass());
 
 
     }
-
+//
     public void pruebaBasicaOficial() {
 
-        Oficial pepe = new Oficial(false, 100, 300.0,true);
+        Oficial pepe = new Oficial(false, 100, false,true);
 
         System.out.println(pepe.getValorHora());
         System.out.println(pepe.getHorasTrabajadas());
@@ -94,26 +88,27 @@ public class Tests {
         System.out.println(pepe.getClass());
 
     }
-
+//
     public void pruebaBasicaCapataz(){
-        Capataz pepe = new Capataz(false, 100, 300.0,true);
+        Capataz pepe = new Capataz(false, 100, true,true);
 
         System.out.println(pepe.getValorHora());
         System.out.println(pepe.getHorasTrabajadas());
         pepe.calcularSueldoBruto();
         System.out.println(pepe.getSueldoBruto());
 
+        pepe.setCantidadDonada(1000.0);
         pepe.calcularSueldoNeto();
         System.out.println(pepe.getSueldoNeto());
         System.out.println(pepe.getClass());
     }
-
+//
     public void pruebaBasicaEmpresa(){
-        Peon pepe = new Peon(false, 100, 300.0);
-        Peon pepita = new Peon(true,100,300.0);
-        MedioOficial pepon = new MedioOficial(false,100,300.0);
-        Oficial jose = new Oficial(false,100,300.0,true);
-        Capataz josele = new Capataz(true,200,300.0,true);
+        Peon pepe = new Peon(false, 100, false);
+        Peon pepita = new Peon(true,100,true);
+        MedioOficial pepon = new MedioOficial(false,100,false);
+        Oficial jose = new Oficial(false,100,false,true);
+        Capataz josele = new Capataz(true,200,true,true);
 
 
         pepe.calcularSueldoBruto();
@@ -127,6 +122,9 @@ public class Tests {
         System.out.println(pepon.getSueldoBruto());
         System.out.println(jose.getSueldoBruto());
         System.out.println(josele.getSueldoBruto());
+
+        pepita.setCantidadDonada(1000.0);
+        josele.setCantidadDonada(3000.0);
 
         pepe.calcularSueldoNeto();
         pepita.calcularSueldoNeto();

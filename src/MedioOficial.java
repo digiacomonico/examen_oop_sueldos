@@ -1,7 +1,7 @@
 public class MedioOficial extends Peon {
 
-    public MedioOficial(Boolean afiliadoAlGremio, Integer horasTrabajadas, Double valorHora) {
-        super(afiliadoAlGremio, horasTrabajadas, valorHora);
+    public MedioOficial(Boolean afiliadoAlGremio, Integer horasTrabajadas, Boolean donaSueldo) {
+        super(afiliadoAlGremio, horasTrabajadas,donaSueldo);
         this.setValorHora(this.getValorHora() * 1.05);
     }
 

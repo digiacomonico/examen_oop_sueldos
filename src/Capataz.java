@@ -1,7 +1,7 @@
 public class Capataz extends Oficial {
 
-    public Capataz(Boolean afiliadoAlGremio, Integer horasTrabajadas, Double valorHora, Boolean cumplioObjetivos) {
-        super(afiliadoAlGremio, horasTrabajadas, valorHora, cumplioObjetivos);
+    public Capataz(Boolean afiliadoAlGremio, Integer horasTrabajadas, Boolean cumplioObjetivos, Boolean donaSueldo) {
+        super(afiliadoAlGremio, horasTrabajadas, cumplioObjetivos, donaSueldo);
     }
 
     @Override

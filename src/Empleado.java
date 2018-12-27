@@ -1,4 +1,4 @@
-public class Empleado {
+public abstract class Empleado {
 
     private Double sueldoBruto;
     private Double sueldoNeto;
@@ -13,10 +13,10 @@ public class Empleado {
     }
 
 
-    public Empleado(Boolean afiliadoAlGremio, Integer horasTrabajadas, Double valorHora) {
+    public Empleado(Boolean afiliadoAlGremio, Integer horasTrabajadas, Boolean donaSueldo) {
         this.afiliadoAlGremio = afiliadoAlGremio;
         this.horasTrabajadas = horasTrabajadas;
-        this.valorHora = valorHora;
+        this.setDonaSueldo(donaSueldo);
     }
 
     public Double getSueldoBruto() {
