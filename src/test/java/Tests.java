@@ -1,35 +1,39 @@
 import java.util.ArrayList;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class Tests {
 
 
-    public static void main(String[] args) {
-        Tests aTest = new Tests();
-        System.out.println("START-TEST pruebaBasicaPeon");
-        aTest.pruebaBasicaPeon();
-        System.out.println("FINISH-TEST pruebaBasicaPeon");
+//    public static void main(String[] args) {
+//        Tests aTest = new Tests();
+//        System.out.println("START-TEST pruebaBasicaPeon");
+//        aTest.pruebaBasicaPeon();
+//        System.out.println("FINISH-TEST pruebaBasicaPeon");
+//
+//        System.out.println("START-TEST pruebaBasicaMedioOficial");
+//        aTest.pruebaBasicaMedioOficial();
+//        System.out.println("FINISH-TEST pruebaBasicaMedioOficial");
+//
+//        System.out.println("START-TEST pruebaBasicaOficial");
+//        aTest.pruebaBasicaOficial();
+//        System.out.println("FINISH-TEST pruebaBasicaOficial");
+//
+//
+//        System.out.println("START-TEST pruebaBasicaCapataz");
+//        aTest.pruebaBasicaCapataz();
+//        System.out.println("FINISH-TEST pruebaBasicaCapataz");
+//
+//        System.out.println("START-TEST pruebaBasicaEmpresa");
+//        aTest.pruebaBasicaEmpresa();
+//        System.out.println("FINISH-TEST pruebaBasicaEmpresa");
+//
+//    }
 
-        System.out.println("START-TEST pruebaBasicaMedioOficial");
-        aTest.pruebaBasicaMedioOficial();
-        System.out.println("FINISH-TEST pruebaBasicaMedioOficial");
-
-        System.out.println("START-TEST pruebaBasicaOficial");
-        aTest.pruebaBasicaOficial();
-        System.out.println("FINISH-TEST pruebaBasicaOficial");
-
-
-        System.out.println("START-TEST pruebaBasicaCapataz");
-        aTest.pruebaBasicaCapataz();
-        System.out.println("FINISH-TEST pruebaBasicaCapataz");
-
-        System.out.println("START-TEST pruebaBasicaEmpresa");
-        aTest.pruebaBasicaEmpresa();
-        System.out.println("FINISH-TEST pruebaBasicaEmpresa");
-
-    }
-
-
+//    @Test
 //    public void pruebaBasicaEmpleado() {
 //
 //        Empleado pepe = new Empleado(false,101);
@@ -47,7 +51,7 @@ public class Tests {
 //
 //    }
 
-
+    @Test
     public void pruebaBasicaPeon() {
         Peon pepe = new Peon(false, 1000,false);
         Peon teresa = new Peon(false,1000,false);
@@ -59,16 +63,12 @@ public class Tests {
 
         pepe.calcularSueldoBruto();
         teresa.calcularSueldoBruto();
-        System.out.println(pepe.getSueldoBruto());
-        System.out.println(teresa.getSueldoBruto());
 
         pepe.calcularSueldoNeto();
         teresa.calcularSueldoNeto();
-        System.out.println(pepe.getSueldoNeto());
-        System.out.println(teresa.getSueldoNeto());
-        System.out.println(pepe.getClass());
 
-
+        Assert.assertEquals(pepe.getSueldoNeto(),243600.0);
+        Assert.assertEquals(teresa.getSueldoNeto(),243708.0);
     }
 
 
