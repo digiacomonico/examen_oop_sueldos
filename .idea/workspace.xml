@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d4f9ff-baa4-4e92-8955-e3012cc1c9db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,27 +25,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
+          <entry key="class" value="4" />
+          <entry key="java" value="13" />
           <entry key="properties" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="13" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5316" />
+          <entry key="java" value="5590" />
           <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5316" />
+          <entry key="JAVA" value="5590" />
           <entry key="XML" value="15" />
         </counts>
       </usages-collector>
@@ -55,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="144" column="73" selection-start-line="144" selection-start-column="73" selection-end-line="144" selection-end-column="73" />
+            <state relative-caret-position="179">
+              <caret line="191" column="75" selection-start-line="191" selection-start-column="75" selection-end-line="191" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#pruebaBasicaPeon#0;class#Tests#0" />
@@ -70,46 +70,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Empleado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="22">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Peon.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Empresa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MedioOficial.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="40" selection-start-column="40" selection-end-column="40" />
+            <state relative-caret-position="135">
+              <caret line="79" column="70" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#empleadoMasBarato#0;class#Empresa#0" />
+                <element signature="method#empleadoMasCaro#0;class#Empresa#0" />
+                <element signature="method#cantidadEmpleados#0;class#Empresa#0" />
+                <element signature="method#mediaSueldoBruto#0;class#Empresa#0" />
+                <element signature="method#cantidadPorTipoEmpleado#0;class#Empresa#0" />
+                <element signature="method#cantidadPorTipoEmpleadoB#0;class#Empresa#0" />
+                <element signature="method#cantidadPeones#0;class#Empresa#0" />
+                <element signature="method#cantidadMedioOficial#0;class#Empresa#0" />
+                <element signature="method#cantidadOficial#0;class#Empresa#0" />
+                <element signature="method#cantidadCapataz#0;class#Empresa#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,27 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Capataz.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Empresa.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#cantidadPeones#0;class#Empresa#0" />
-                <element signature="method#cantidadMedioOficial#0;class#Empresa#0" />
-                <element signature="method#cantidadOficial#0;class#Empresa#0" />
-                <element signature="method#cantidadCapataz#0;class#Empresa#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -173,6 +143,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Tests.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/Empresa.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
       </list>
     </option>
@@ -240,7 +211,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546024646035" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546026252258" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RecentsManager">
@@ -260,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Tests.pruebaBasicaEmpresa">
+  <component name="RunManager" selected="TestNG.Tests">
     <configuration name="Tests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="examen_oop_sueldos" />
       <option name="PACKAGE_NAME" value="" />
@@ -307,11 +278,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.pruebaBasicaPeon" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.pruebaEmpresa" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="examen_oop_sueldos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="pruebaBasicaPeon" />
+      <option name="METHOD_NAME" value="pruebaEmpresa" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -320,19 +291,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.Tests.pruebaBasicaPeon" />
       <item itemvalue="TestNG.Tests" />
       <item itemvalue="TestNG.Tests.pruebaBasicaOficial" />
       <item itemvalue="TestNG.Tests.pruebaBasicaCapataz" />
       <item itemvalue="TestNG.Tests.pruebaBasicaEmpresa" />
+      <item itemvalue="TestNG.Tests.pruebaEmpresa" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Tests" />
+        <item itemvalue="TestNG.Tests.pruebaEmpresa" />
         <item itemvalue="TestNG.Tests.pruebaBasicaEmpresa" />
         <item itemvalue="TestNG.Tests.pruebaBasicaCapataz" />
         <item itemvalue="TestNG.Tests.pruebaBasicaOficial" />
-        <item itemvalue="TestNG.Tests" />
-        <item itemvalue="TestNG.Tests.pruebaBasicaPeon" />
       </list>
     </recent_temporary>
   </component>
@@ -350,35 +321,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests - 2018.12.28 at 16h 01m 43s.xml">
-      <configuration name="Tests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Tests - 2018.12.28 at 16h 04m 26s.xml">
-      <configuration name="Tests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Tests - 2018.12.28 at 16h 05m 28s.xml">
-      <configuration name="Tests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Tests_pruebaBasicaOficial - 2018.12.28 at 16h 06m 28s.xml">
-      <configuration name="Tests.pruebaBasicaOficial" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Tests_pruebaBasicaOficial - 2018.12.28 at 16h 08m 29s.xml">
-      <configuration name="Tests.pruebaBasicaOficial" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Tests_pruebaBasicaCapataz - 2018.12.28 at 16h 09m 03s.xml">
-      <configuration name="Tests.pruebaBasicaCapataz" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Tests_pruebaBasicaCapataz - 2018.12.28 at 16h 10m 30s.xml">
-      <configuration name="Tests.pruebaBasicaCapataz" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Tests_pruebaBasicaEmpresa - 2018.12.28 at 16h 11m 07s.xml">
+    <history-entry file="Tests_pruebaBasicaEmpresa - 2018.12.28 at 16h 17m 14s.xml">
       <configuration name="Tests.pruebaBasicaEmpresa" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Tests_pruebaBasicaEmpresa - 2018.12.28 at 16h 11m 50s.xml">
+    <history-entry file="Tests_pruebaEmpresa - 2018.12.28 at 16h 23m 46s.xml">
+      <configuration name="Tests.pruebaEmpresa" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Tests_pruebaEmpresa - 2018.12.28 at 16h 27m 42s.xml">
+      <configuration name="Tests.pruebaEmpresa" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Tests_pruebaEmpresa - 2018.12.28 at 16h 28m 20s.xml">
+      <configuration name="Tests.pruebaEmpresa" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Tests_pruebaEmpresa - 2018.12.28 at 16h 29m 11s.xml">
+      <configuration name="Tests.pruebaEmpresa" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Tests_pruebaEmpresa - 2018.12.28 at 16h 29m 33s.xml">
+      <configuration name="Tests.pruebaEmpresa" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Tests_pruebaBasicaEmpresa - 2018.12.28 at 16h 33m 43s.xml">
       <configuration name="Tests.pruebaBasicaEmpresa" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Tests_pruebaBasicaEmpresa - 2018.12.28 at 16h 12m 47s.xml">
+    <history-entry file="Tests_pruebaBasicaEmpresa - 2018.12.28 at 16h 34m 47s.xml">
       <configuration name="Tests.pruebaBasicaEmpresa" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Tests_pruebaEmpresa - 2018.12.28 at 16h 34m 54s.xml">
+      <configuration name="Tests.pruebaEmpresa" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Tests_pruebaEmpresa - 2018.12.28 at 16h 35m 59s.xml">
+      <configuration name="Tests.pruebaEmpresa" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -462,106 +433,10 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>96</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>100</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>102</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests.java</url>
           <line>83</line>
           <properties />
           <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>88</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Oficial.java</url>
@@ -575,6 +450,38 @@
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Empresa.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Empresa.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Empresa.java</url>
+          <line>68</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Empresa.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests.java</url>
+          <line>173</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Oficial.java</url>
           <line>11</line>
@@ -582,14 +489,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Empleado.java</url>
-          <line>83</line>
-          <properties class="Empleado" method="calcularSueldoNeto">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -619,52 +518,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Empleado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Peon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MedioOficial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Oficial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Capataz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Empresa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#cantidadPeones#0;class#Empresa#0" />
-            <element signature="method#cantidadMedioOficial#0;class#Empresa#0" />
-            <element signature="method#cantidadOficial#0;class#Empresa#0" />
-            <element signature="method#cantidadCapataz#0;class#Empresa#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,15 +539,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Peon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/function/Predicate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="476" selection-start-line="476" selection-end-line="476" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Oficial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Empresa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="79" column="70" selection-start-line="79" selection-start-column="70" selection-end-line="79" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#empleadoMasBarato#0;class#Empresa#0" />
+            <element signature="method#empleadoMasCaro#0;class#Empresa#0" />
+            <element signature="method#cantidadEmpleados#0;class#Empresa#0" />
+            <element signature="method#mediaSueldoBruto#0;class#Empresa#0" />
+            <element signature="method#cantidadPorTipoEmpleado#0;class#Empresa#0" />
+            <element signature="method#cantidadPorTipoEmpleadoB#0;class#Empresa#0" />
+            <element signature="method#cantidadPeones#0;class#Empresa#0" />
+            <element signature="method#cantidadMedioOficial#0;class#Empresa#0" />
+            <element signature="method#cantidadOficial#0;class#Empresa#0" />
+            <element signature="method#cantidadCapataz#0;class#Empresa#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Empleado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="144" column="73" selection-start-line="144" selection-start-column="73" selection-end-line="144" selection-end-column="73" />
+        <state relative-caret-position="179">
+          <caret line="191" column="75" selection-start-line="191" selection-start-column="75" selection-end-line="191" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#pruebaBasicaPeon#0;class#Tests#0" />
             <element signature="method#pruebaBasicaMedioOficial#0;class#Tests#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Capataz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

@@ -10,7 +10,7 @@ public class Tests {
     private static final Logger LOGGER = LoggerFactory.getLogger(Tests.class);
 
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void pruebaBasicaPeon() {
         LOGGER.info("START-TEST pruebaBasicaPeon");
         Peon pepe = new Peon(false, 1000,false);
@@ -36,7 +36,7 @@ public class Tests {
         LOGGER.info("FINISH-TEST pruebaBasicaPeon");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void pruebaBasicaMedioOficial() {
         LOGGER.info("START-TEST pruebaBasicaMedioOficial");
         MedioOficial pepe = new MedioOficial(false, 100,true);
@@ -52,7 +52,7 @@ public class Tests {
         LOGGER.info("FINISH-TEST pruebaBasicaMedioOficial");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void pruebaBasicaOficial() {
         LOGGER.info("START-TEST pruebaBasicaOficial");
         Oficial pepe = new Oficial(false, 100, false,true);
@@ -67,7 +67,7 @@ public class Tests {
         LOGGER.info("FINISH-TEST pruebaBasicaOficial");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void pruebaBasicaCapataz(){
         LOGGER.info("START-TEST pruebaBasicaCapataz");
         Capataz pepe = new Capataz(false, 100, true,true);
@@ -92,18 +92,11 @@ public class Tests {
         Oficial jose = new Oficial(false,100,false,true);
         Capataz josele = new Capataz(true,200,true,true);
 
-
         pepe.calcularSueldoBruto();
         pepita.calcularSueldoBruto();
         pepon.calcularSueldoBruto();
         jose.calcularSueldoBruto();
         josele.calcularSueldoBruto();
-
-        System.out.println(pepe.getSueldoBruto());
-        System.out.println(pepita.getSueldoBruto());
-        System.out.println(pepon.getSueldoBruto());
-        System.out.println(jose.getSueldoBruto());
-        System.out.println(josele.getSueldoBruto());
 
         pepita.setCantidadDonada(1000.0);
         josele.setCantidadDonada(3000.0);
@@ -113,14 +106,6 @@ public class Tests {
         pepon.calcularSueldoNeto();
         jose.calcularSueldoNeto();
         josele.calcularSueldoNeto();
-
-        System.out.println(pepe.getSueldoNeto());
-        System.out.println(pepita.getSueldoNeto());
-        System.out.println(pepon.getSueldoNeto());
-        System.out.println(jose.getSueldoNeto());
-        System.out.println(josele.getSueldoNeto());
-
-//        System.out.println(pepe.getClass());
 
         List<Empleado> empleadoList = new ArrayList<>();
         empleadoList.add(pepe);
@@ -132,19 +117,19 @@ public class Tests {
 
         Empresa empresa = new Empresa(empleadoList);
 
-        System.out.println(empresa.empleadoMasBarato());
-        System.out.println(empresa.empleadoMasCaro());
-        System.out.println(empresa.cantidadEmpleados());
-        System.out.println(empresa.mediaSueldoBruto());
-        System.out.println(empresa.cantidadPorTipoEmpleado());
-        System.out.println(empresa.promedioSueldoBrutoPorTipoEmpleado());
-
-
         Assert.assertEquals(empresa.empleadoMasBarato(),pepita);
         Assert.assertEquals(empresa.empleadoMasCaro(),josele);
         Assert.assertEquals(empresa.cantidadEmpleados(),Long.valueOf(5));
         Assert.assertEquals(empresa.mediaSueldoBruto(),34531.576);
-//        Assert.assertEquals(empresa.cantidadPorTipoEmpleado(),);
+        Assert.assertEquals(empresa.cantidadPorTipoEmpleado(pepe), Long.valueOf(2));
+        Assert.assertEquals(empresa.cantidadPorTipoEmpleado(pepon),Long.valueOf(1));
+        Assert.assertEquals(empresa.cantidadPorTipoEmpleado(jose),Long.valueOf(1));
+        Assert.assertEquals(empresa.cantidadPorTipoEmpleado(josele),Long.valueOf(1));
+        Assert.assertEquals(empresa.promedioSueldoBrutoPorTipoEmpleado(pepe),30000.0);
+        Assert.assertEquals(empresa.promedioSueldoBrutoPorTipoEmpleado(pepon),31500.0);
+        Assert.assertEquals(empresa.promedioSueldoBrutoPorTipoEmpleado(jose),42900.0);
+        Assert.assertEquals(empresa.promedioSueldoBrutoPorTipoEmpleado(josele),89800.0);
+
         LOGGER.info("FINISH-TEST pruebaBasicaEmpresa");
     }
 
