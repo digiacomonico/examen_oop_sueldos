@@ -7,52 +7,12 @@ import org.testng.annotations.Test;
 
 public class Tests {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(Tests.class);
 
-//    public static void main(String[] args) {
-//        Tests aTest = new Tests();
-//        System.out.println("START-TEST pruebaBasicaPeon");
-//        aTest.pruebaBasicaPeon();
-//        System.out.println("FINISH-TEST pruebaBasicaPeon");
-//
-//        System.out.println("START-TEST pruebaBasicaMedioOficial");
-//        aTest.pruebaBasicaMedioOficial();
-//        System.out.println("FINISH-TEST pruebaBasicaMedioOficial");
-//
-//        System.out.println("START-TEST pruebaBasicaOficial");
-//        aTest.pruebaBasicaOficial();
-//        System.out.println("FINISH-TEST pruebaBasicaOficial");
-//
-//
-//        System.out.println("START-TEST pruebaBasicaCapataz");
-//        aTest.pruebaBasicaCapataz();
-//        System.out.println("FINISH-TEST pruebaBasicaCapataz");
-//
-//        System.out.println("START-TEST pruebaBasicaEmpresa");
-//        aTest.pruebaBasicaEmpresa();
-//        System.out.println("FINISH-TEST pruebaBasicaEmpresa");
-//
-//    }
 
-//    @Test
-//    public void pruebaBasicaEmpleado() {
-//
-//        Empleado pepe = new Empleado(false,101);
-////        pepe.setValorHora(300);
-//        System.out.println(pepe.getValorHora());
-////        pepe.setHorasTrabajadas(3);
-//        System.out.println(pepe.getHorasTrabajadas());
-//        pepe.calcularSueldoBruto();
-//        System.out.println(pepe.getSueldoBruto());
-//
-//        pepe.calcularSueldoNeto();
-//        System.out.println(pepe.getSueldoNeto());
-//        System.out.println(pepe.getClass());
-//
-//
-//    }
-
-    @Test
+    @Test(enabled = false)
     public void pruebaBasicaPeon() {
+        LOGGER.info("START-TEST pruebaBasicaPeon");
         Peon pepe = new Peon(false, 1000,false);
         Peon teresa = new Peon(false,1000,false);
 
@@ -67,57 +27,65 @@ public class Tests {
         pepe.calcularSueldoNeto();
         teresa.calcularSueldoNeto();
 
+        Assert.assertEquals(pepe.getValorHora(),300.0);
+        Assert.assertEquals(teresa.getValorHora(),300.0);
+        Assert.assertEquals(pepe.getSueldoBruto(),300000.0);
+        Assert.assertEquals(teresa.getSueldoBruto(),300000.0);
         Assert.assertEquals(pepe.getSueldoNeto(),243600.0);
         Assert.assertEquals(teresa.getSueldoNeto(),243708.0);
+        LOGGER.info("FINISH-TEST pruebaBasicaPeon");
     }
 
-
+    @Test(enabled = false)
     public void pruebaBasicaMedioOficial() {
+        LOGGER.info("START-TEST pruebaBasicaMedioOficial");
         MedioOficial pepe = new MedioOficial(false, 100,true);
 
-        System.out.println(pepe.getValorHora());
-        System.out.println(pepe.getHorasTrabajadas());
         pepe.calcularSueldoBruto();
-        System.out.println(pepe.getSueldoBruto());
 
         pepe.setCantidadDonada(1.0);
         pepe.calcularSueldoNeto();
-        System.out.println(pepe.getSueldoNeto());
-        System.out.println(pepe.getClass());
 
-
+        Assert.assertEquals(pepe.getValorHora(),315.0);
+        Assert.assertEquals(pepe.getSueldoBruto(),31500.0);
+        Assert.assertEquals(pepe.getSueldoNeto(),26115.0);
+        LOGGER.info("FINISH-TEST pruebaBasicaMedioOficial");
     }
-//
-    public void pruebaBasicaOficial() {
 
+    @Test(enabled = false)
+    public void pruebaBasicaOficial() {
+        LOGGER.info("START-TEST pruebaBasicaOficial");
         Oficial pepe = new Oficial(false, 100, false,true);
 
-        System.out.println(pepe.getValorHora());
-        System.out.println(pepe.getHorasTrabajadas());
+
         pepe.calcularSueldoBruto();
-        System.out.println(pepe.getSueldoBruto());
-
         pepe.calcularSueldoNeto();
-        System.out.println(pepe.getSueldoNeto());
-        System.out.println(pepe.getClass());
 
+        Assert.assertEquals(pepe.getValorHora(),330.0);
+        Assert.assertEquals(pepe.getSueldoBruto(),42900.0);
+        Assert.assertEquals(pepe.getSueldoNeto(),35349.0);
+        LOGGER.info("FINISH-TEST pruebaBasicaOficial");
     }
-//
+
+    @Test(enabled = false)
     public void pruebaBasicaCapataz(){
+        LOGGER.info("START-TEST pruebaBasicaCapataz");
         Capataz pepe = new Capataz(false, 100, true,true);
 
-        System.out.println(pepe.getValorHora());
-        System.out.println(pepe.getHorasTrabajadas());
         pepe.calcularSueldoBruto();
-        System.out.println(pepe.getSueldoBruto());
 
         pepe.setCantidadDonada(1000.0);
         pepe.calcularSueldoNeto();
-        System.out.println(pepe.getSueldoNeto());
-        System.out.println(pepe.getClass());
+
+        Assert.assertEquals(pepe.getValorHora(),330.0);
+        Assert.assertEquals(pepe.getSueldoBruto(),46900.0);
+        Assert.assertEquals(pepe.getSueldoNeto(),38592.38);
+        LOGGER.info("FINISH-TEST pruebaBasicaCapataz");
     }
-//
+
+    @Test(enabled = true)
     public void pruebaBasicaEmpresa(){
+        LOGGER.info("START-TEST pruebaBasicaEmpresa");
         Peon pepe = new Peon(false, 100, false);
         Peon pepita = new Peon(true,100,true);
         MedioOficial pepon = new MedioOficial(false,100,false);
@@ -172,6 +140,12 @@ public class Tests {
         System.out.println(empresa.promedioSueldoBrutoPorTipoEmpleado());
 
 
+        Assert.assertEquals(empresa.empleadoMasBarato(),pepita);
+        Assert.assertEquals(empresa.empleadoMasCaro(),josele);
+        Assert.assertEquals(empresa.cantidadEmpleados(),Long.valueOf(5));
+        Assert.assertEquals(empresa.mediaSueldoBruto(),34531.576);
+//        Assert.assertEquals(empresa.cantidadPorTipoEmpleado(),);
+        LOGGER.info("FINISH-TEST pruebaBasicaEmpresa");
     }
 
 }
